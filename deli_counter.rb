@@ -8,14 +8,14 @@ def line(katz_deli)
     callOut = "The line is currently: "
     katz_deli.each_with_index do |person, idx|
       place = idx + 1 
-      callOut += "#{place}. #{name} "
+      callOut += "#{place}. #{person} "
     end 
   end 
   return callOut 
 end 
 
 def take_a_number(katz_deli, name)
-  place = katz_deli.legnth + 1 
+  place = katz_deli.length + 1 
   puts "Welcome, #{name}. You are number #{place} in line."
 end 
 
