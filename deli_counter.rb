@@ -26,7 +26,7 @@ def now_serving(katz_deli)
   elsif(katz_deli.length >= 1) 
     person = katz_deli[0] 
     puts "Currently serving #{person}."
-    katz_deli.unshift
+    katz_deli.shift
   end 
 end 
 
