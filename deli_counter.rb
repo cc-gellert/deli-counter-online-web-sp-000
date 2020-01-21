@@ -5,10 +5,10 @@ def line(katz_deli)
   if(katz_deli.length <= 0)
     return "The line is currently empty."
   else
-    callOut = "The line is currently: "
+    callOut = "The line is currently:"
     katz_deli.each_with_index do |person, idx|
       place = idx + 1 
-      callOut += "#{place}. #{person} "
+      callOut += " #{place}. #{person}"
     end 
   end 
   puts callOut 
