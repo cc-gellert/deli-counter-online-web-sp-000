@@ -2,10 +2,16 @@
 katz_deli = []
 
 def line(katz_deli) 
-  if(katz_deli.length == 0)
+  if(katz_deli.length <= 0)
     puts "The line is currently empty."
-  else 
-    puts "The line is currently: 1.#{katz_deli[0]} 2."
+  else
+    callOut = "The line is currently: "
+    katz_deli.each_with_index do |person, idx|
+      place = idx + 1 
+      callOut += "#{place}. #{name} "
+    end 
+  end 
+  return callOut 
 end 
 
 def take_a_number(katz_deli, name)
