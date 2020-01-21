@@ -11,7 +11,7 @@ def line(katz_deli)
       callOut += "#{place}. #{person} "
     end 
   end 
-  return callOut 
+  puts callOut 
 end 
 
 def take_a_number(katz_deli, name)
